@@ -104,10 +104,11 @@ def playAgain():
 
 print('В И С Е Л И Ц А')
 
-difficulty = ''
-while difficulty not in 'ЛСТ':
-  print('Выберите уровень сложности: Л - Легкий, С - Средний, Т - Тяжелый')
-  difficulty = input().upper()
+difficulty = []
+
+while difficulty not in ['Л', 'С', 'Т']:
+    print('Выберите уровень сложности: Л - Легкий, С - Средний, Т - Тяжелый')
+    difficulty = input().upper()
 if difficulty == 'С':
     del HANGMAN_PICS[8]
     del HANGMAN_PICS[7]
